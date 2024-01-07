@@ -1,0 +1,13 @@
+{
+    "module_id": "emery:lv-maxsonar-ez",
+    "visibility": "public",
+    "url": "https://github.com/eemery/viam-comp-lv-maxsonar-ez",
+    "description": "lv-maxsonar-ez is a modular sensor component that provides distance readings from the LV MAXSONAR EZ ultrasonic sensor.",
+    "models": [
+        {
+        "api": "rdk:component:sensor",
+        "model": "emery:sensor:lv-maxsonar-ez"
+        }
+    ],
+    "entrypoint": "run.sh"
+}
