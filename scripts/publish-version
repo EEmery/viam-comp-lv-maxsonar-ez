@@ -1,0 +1,5 @@
+#! /bin/bash
+
+tar -czf module.tar.gz run.sh requirements/prod.txt src
+
+viam module upload --version $1 --platform linux/arm64 module.tar.gz
