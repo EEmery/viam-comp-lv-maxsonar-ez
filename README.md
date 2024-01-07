@@ -8,6 +8,7 @@ This repository describes the sensor LV MAXSONAR EZ as a modular VIAM sensor com
 sudo apt update && sudo apt upgrade -y
 sudo apt-get install python3
 sudo apt install python3-pip
+sudo apt-get install python3-venv
 ```
 
 ## API
