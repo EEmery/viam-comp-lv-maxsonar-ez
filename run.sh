@@ -2,7 +2,6 @@
 cd `dirname $0`
 
 VENV_NAME=".venv"
-PYTHON="$VENV_NAME/bin/python"
 ENTRYPOINT="src/"
 
 if [ -f .installed ]
@@ -13,7 +12,7 @@ if [ -f .installed ]
         # Create virtual environment and activate it to run the code
         python3 -m venv $VENV_NAME
         source $VENV_NAME/bin/activate
-        $PYTHON -m pip install -r requirements/prod.txt -U
+        python3 -m pip install -r requirements/prod.txt -U
         if [ $? -eq 0 ]
             then
                 touch .installed
@@ -21,4 +20,4 @@ if [ -f .installed ]
 fi
 
 # Executes code
-exec $PYTHON $ENTRYPOINT $@
+exec python3 $ENTRYPOINT $@
