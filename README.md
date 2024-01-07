@@ -27,8 +27,8 @@ Example:
 
 ```
 {
-  "pw": 32,
-  "rx_pin": 30
+  "pw_pin": 36,
+  "rx_pin": 37
 }
 ```
 
